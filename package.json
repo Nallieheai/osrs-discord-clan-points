@@ -15,7 +15,7 @@
   "dependencies": {
     "@wise-old-man/utils": "^3.3.6",
     "discord.js": "^14.16.3",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "fast-csv": "^5.0.2"
   }
 }
- 
