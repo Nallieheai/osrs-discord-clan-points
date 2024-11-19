@@ -46,3 +46,6 @@ yarn.lock
 
 # ignore fetched json files for users
 scripts/users
+
+# ignore build info
+*.tsbuildinfo

@@ -5,14 +5,17 @@
   "scripts": {
     "build": "tsc --build",
     "clean": "tsc --build --clean",
-    "start": "npm run clean && node build/index.js"
+    "start": "node build/index.js",
+    "startnbuild": "npm run clean && npm run build && node build/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@wise-old-man/utils": "^3.3.6",
     "discord.js": "^14.16.3",
     "dotenv": "^16.4.5"
   }
 }
+ 
