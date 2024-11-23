@@ -1,6 +1,9 @@
 // const player = await fetch(`${womBaseUrl}/players/id/${playerId}`).then(res => res.json());
 // const player = await fetch(`${womBaseUrl}/players/${playerName}`).then(res => res.json());
 
+// const womBaseUrl = "https://api.wiseoldman.net/v2";
+// const clogBaseUrl = "https://api.collectionlog.net";
+
 // console.log("Player: ", player);
 // const client = new WOMClient();
 
