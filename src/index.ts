@@ -8,6 +8,7 @@ import { getEligibleCompetitionParticipants } from "./services/WiseOldMan";
  * WOM Base URL: https://api.wiseoldman.net/v2
  * CollectionLog Base URL: https://api.collectionlog.net/
  * Iron Relax groupId: 5657
+ * Competitions: 69862, 70981, 66593 (check team)
  */
 
 // Main function
@@ -15,7 +16,6 @@ import { getEligibleCompetitionParticipants } from "./services/WiseOldMan";
     const wom = new WOMClient();
 
     // const totalPoints = await fetchPointsFromCollectionLog("Nallieheai", "Iron Relax", 5657);
-    // const eligibleParticipants = await getEligibleCompetitionParticipants(wom, 70981, 100);
-    
+    // const eligibleParticipants = await getEligibleCompetitionParticipants(wom, 69862, 100);
 })();
 
