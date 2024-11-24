@@ -16,6 +16,6 @@ import { getEligibleCompetitionParticipants } from "./services/WiseOldMan";
     const wom = new WOMClient();
 
     // const totalPoints = await fetchPointsFromCollectionLog("Nallieheai", "Iron Relax", 5657);
-    // const eligibleParticipants = await getEligibleCompetitionParticipants(wom, 69862, 100);
+    // const eligibleParticipants = await getEligibleCompetitionParticipants(wom, 66593, 100, ["Iron Relax (Europe)"]);
 })();
 
