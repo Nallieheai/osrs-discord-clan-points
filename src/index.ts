@@ -1,4 +1,5 @@
 // const { WOMClient } = require('@wise-old-man/utils');
+import mysql from "mysql2";
 import { WOMClient } from "@wise-old-man/utils";
 import { fetchPointsFromCollectionLog } from "./services/CollectionLog";
 import { getEligibleCompetitionParticipants } from "./services/WiseOldMan";
@@ -16,6 +17,6 @@ import { getEligibleCompetitionParticipants } from "./services/WiseOldMan";
     const wom = new WOMClient();
 
     // const totalPoints = await fetchPointsFromCollectionLog("Nallieheai", "Iron Relax", 5657);
-    // const eligibleParticipants = await getEligibleCompetitionParticipants(wom, 66593, 100, ["Iron Relax (Europe)"]);
+    // const eligibleParticipants = await getEligibleCompetitionParticipants(wom, 66593, 500 * 10 ** 3, ["Iron Relax (Europe)"]);
 })();
 
