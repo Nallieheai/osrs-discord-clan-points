@@ -3,6 +3,7 @@ import mysql from "mysql2";
 import { WOMClient } from "@wise-old-man/utils";
 import { fetchPointsFromCollectionLog } from "./services/CollectionLog";
 import { getEligibleCompetitionParticipants } from "./services/WiseOldMan";
+import { getVariablePointsCompetition } from "./services/IronRelax";
 
 
 /*
@@ -18,5 +19,8 @@ import { getEligibleCompetitionParticipants } from "./services/WiseOldMan";
 
     // const totalPoints = await fetchPointsFromCollectionLog("Nallieheai", "Iron Relax", 5657);
     // const eligibleParticipants = await getEligibleCompetitionParticipants(wom, 66593, 500 * 10 ** 3, ["Iron Relax (Europe)"]);
-})();
+    const eligibleParticipants = await getEligibleCompetitionParticipants(wom, 75234, 1 * 10 ** 5);
+    const userPoints = await getVariablePointsCompetition(eligibleParticipants, 1 * 10 ** 5, 10);
 
+    userPoints.forEach(data => console.log(`${data.user} gets ${data.points} points! (${data.xp})`));
+})();
